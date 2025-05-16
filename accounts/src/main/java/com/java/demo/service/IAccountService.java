@@ -2,8 +2,6 @@ package com.java.demo.service;
 
 import com.java.demo.dto.CustomerDTO;
 
-import java.util.List;
-
 public interface IAccountService {
     /**
      * Create new account for customer.
@@ -24,4 +22,11 @@ public interface IAccountService {
      * @return
      */
     boolean updateAccountDetails(CustomerDTO customerDTO);
+
+    /**
+     * Delete account for customer.
+     * @param mobileNumber
+     * @return
+     */
+    boolean deleteAccount(String mobileNumber);
 }
