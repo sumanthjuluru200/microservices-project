@@ -5,6 +5,7 @@ import com.java.demo.dto.CustomerDTO;
 import com.java.demo.dto.ResponseDto;
 import com.java.demo.service.IAccountService;
 import jakarta.validation.Valid;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

@@ -105,6 +105,13 @@ public class AccountServiceImpl implements IAccountService {
         return isUpdated;
     }
 
+    /**
+     * Delete account for customer.
+     *
+     * @param mobileNumber
+     * @return
+     */
+
     @Override
     public boolean deleteAccount(String mobileNumber) {
         Customer customer = customerRepository.findByMobileNumber(mobileNumber).orElseThrow(
