@@ -1,5 +1,6 @@
 package com.java.accounts.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
@@ -19,5 +20,6 @@ public class CustomerDTO {
 
     @Pattern(regexp = "(^$|[0-9]{10})", message = "Please provide a valid mobile number")
     private String mobileNumber;
+    @JsonProperty("accountDetails")
     private AccountsDTO accountDto;
 }
