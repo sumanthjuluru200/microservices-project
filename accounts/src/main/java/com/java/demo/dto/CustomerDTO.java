@@ -3,9 +3,10 @@ package com.java.demo.dto;
 import lombok.Data;
 
 @Data
-public class AccountsDTO {
+public class CustomerDTO {
 
-    private Long accountNumber;
-    private String accountType;
-    private String branchAddress;
+    private String name;
+    private String email;
+    private String mobileNumber;
+    private AccountsDTO accountDto;
 }

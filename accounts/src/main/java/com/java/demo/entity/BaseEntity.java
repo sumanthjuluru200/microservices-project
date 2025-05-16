@@ -15,14 +15,14 @@ import java.time.LocalDateTime;
 public class BaseEntity {
 
     @Column(updatable = false)
-    private LocalDateTime createAt;
+    private LocalDateTime createdAt;
 
     @Column(insertable = false)
-    private LocalDateTime updateAt;
+    private LocalDateTime updatedAt;
 
     @Column(updatable = false)
-    private String createBy;
+    private String createdBy;
 
     @Column(insertable = false)
-    private String updateBy;
+    private String updatedBy;
 }
