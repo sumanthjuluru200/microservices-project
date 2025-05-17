@@ -1,24 +1,23 @@
 🏦 Banking Microservices Project
-This is a Java-based Banking Microservices Application built using Spring Boot, designed to simulate real-world banking operations such as account management, loan processing, and credit card services. The architecture follows microservices principles, ensuring each domain (Accounts, Loans, Cards) is independently deployable, scalable, and maintainable.
+This is a Java-based Banking Microservices Application built using Spring Boot, designed to simulate real-world banking operations such as account management, loan processing, and credit card services. Each domain is a separate microservice following best practices for clean architecture, API-driven development, and scalability.
+
 
 🚀 Tech Stack
 Java 17+
 
 Spring Boot
 
-Spring Data JPA
-
 Spring Cloud (Config, Gateway, Eureka, OpenFeign)
 
-PostgreSQL / MySQL
+Spring Data JPA
 
-H2 (for development)
+Swagger/OpenAPI for API documentation
 
-REST APIs
+MySQL
 
-Maven / Gradle
+Maven
 
-Docker (optional for containerization)
+Docker (optional for containerization
 
 📦 Microservices Overview
 Service	Description
@@ -30,26 +29,32 @@ eureka-server	Service registry for all microservices
 api-gateway	Unified API entry point with routing, filtering, and security (if added)
 
 🧩 Features
-RESTful APIs for each microservice
+Clean REST APIs using Spring Web
 
-Centralized configuration and discovery
+Swagger-based API documentation
 
-Error handling with custom exceptions
+DTO mapping for clean entity separation
 
-DTO mapping and service-layer abstraction
+Central config & discovery with Eureka + Config Server
 
-Clean code architecture with modular design
+Service-to-service communication (OpenFeign)
 
-Secure endpoints (optionally with Spring Security & JWT)
+Global exception handling
+
+Modular folder structure
+
+
 
 📚 Future Enhancements (Optional)
-Service-to-service communication using OpenFeign
+Docker & Docker Compose setup
 
-Kafka or RabbitMQ integration for async messaging
+Distributed tracing (Zipkin/Sleuth)
 
-Distributed tracing and monitoring (Zipkin/Sleuth)
+Spring Security + JWT authentication
 
-Docker Compose or Kubernetes deployment
+Kafka or RabbitMQ integration
+
+CI/CD pipelines with GitHub Actions
 
 📂 Sample Folder Structure
 vbnet
